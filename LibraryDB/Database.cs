@@ -10,9 +10,10 @@ namespace LibraryDB;
 
 public class Database
 {
-    public NpgsqlConnection SqlConnection { get;  }
-    private readonly string connectionString = 
+    private readonly string connectionString =
         "Server=localhost; Port=5432; Database=Library; User Id=postgres; Password=postgres";
+
+    public NpgsqlConnection SqlConnection { get; }
 
     public Database()
     {
